@@ -20,9 +20,18 @@ app.get('/about', (req, res) => {
 
 //Dynamic "project" routes (/project/:id or /projects/:id) based on the id of the project that render a customized version of the Pug project template to show off each project. Which means adding data, or "locals", as an object that contains data to be passed to the Pug template.
 app.get('/project/:id', (req, res) => {
-    const projectId = req.params;
-    console.log("projectId " , projectId.id);
-  //  res.redirect( `/project/:${projectId}`);
+    const projectId = req.params.id;
+    const projectData = data.projects;
+
+    for (let i = 0; i < projectData.length; i++) {
+        let currentProject = projectData[i];
+        if (parseInt(projectId) === parseInt(currentProject.id)) {
+           res.render('project', currentProject);
+           return;
+        }
+    }
+
+    res.sendStatus(500);
 })
 
 //Finally, start your server. Your app should listen on port 3000, and log a string to the console that says which port the app is listening to.

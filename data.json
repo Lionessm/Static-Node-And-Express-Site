@@ -1,0 +1,49 @@
+ {
+  "projects" : [
+    {
+      "id" : 1,
+      "project_name": "Random Quote Generator",
+      "description" : "",
+      "technologies" : ["HTML", "CSS", "JavaScript"],
+      "live_link" : "",
+      "github_link" : "https://github.com/Lionessm/Random-Quote-Generator.git",
+      "image_urls": ""
+    },
+    {
+      "id" : 2,
+      "project_name": "Data Pagination and Filtering",
+      "description" : "",
+      "technologies" : ["HTML", "CSS", "JavaScript"],
+      "live_link" : "",
+      "github_link" : "",
+      "image_urls": ""
+    },
+    {
+      "id" : 3,
+      "project_name": "Interactive form",
+      "description" : "",
+      "technologies" : ["HTML", "CSS", "JavaScript", "Regex"],
+      "live_link" : "",
+      "github_link" : "",
+      "image_urls": ""
+    },
+    {
+      "id" : 4,
+      "project_name": "OOP Phrase Hunter Game",
+      "description" : "",
+      "technologies" : ["HTML", "CSS", "JavaScript", "Object Oriented Javascript"],
+      "live_link" : "",
+      "github_link" : "",
+      "image_urls": ""
+    },
+    {
+      "id" :5,
+      "project_name": "API Request Project",
+      "description" : "",
+      "technologies" : ["HTML", "CSS", "JavaScript", "AJAX", "HTTP"],
+      "live_link" : "",
+      "github_link" : "",
+      "image_urls": ""
+    }
+  ]
+}

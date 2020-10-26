@@ -7,7 +7,7 @@
       "technologies" : ["HTML", "CSS", "JavaScript"],
       "live_link" : "",
       "github_link" : "https://github.com/Lionessm/Random-Quote-Generator.git",
-      "image_urls": ""
+      "image_urls": ["randomQuote1.png", "randomQuote2.png", "randomQuote3.png"]
     },
     {
       "id" : 2,
@@ -16,16 +16,18 @@
       "technologies" : ["HTML", "CSS", "JavaScript"],
       "live_link" : "",
       "github_link" : "",
-      "image_urls": ""
+      "image_urls": ["dataPagination1.png", "dataPagination2.png", "dataPagination3.png"]
     },
     {
       "id" : 3,
       "project_name": "Interactive form",
-      "description" : "",
+      "description" : "fwfwefwefwefw",
       "technologies" : ["HTML", "CSS", "JavaScript", "Regex"],
       "live_link" : "",
       "github_link" : "",
-      "image_urls": ""
+      "image_urls": ["interactiveForm1.png", "interactiveForm2.png", "interactiveForm3.png", "interactiveForm4.png",
+        "interactiveForm5.png"
+      ]
     },
     {
       "id" : 4,
@@ -34,7 +36,7 @@
       "technologies" : ["HTML", "CSS", "JavaScript", "Object Oriented Javascript"],
       "live_link" : "",
       "github_link" : "",
-      "image_urls": ""
+      "image_urls": ["phraseHunter1.png", "phraseHunter2.png", "phraseHunter3.png", "phraseHunter4.png", "phraseHunter5.png", "phraseHunter6.png"]
     },
     {
       "id" :5,
@@ -43,7 +45,7 @@
       "technologies" : ["HTML", "CSS", "JavaScript", "AJAX", "HTTP"],
       "live_link" : "",
       "github_link" : "",
-      "image_urls": ""
+      "image_urls": ["api1.png", "api2.png"]
     }
   ]
 }

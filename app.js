@@ -34,6 +34,18 @@ app.get('/project/:id', (req, res) => {
     res.sendStatus(500);
 })
 
+//Error
+
+app.use(function(req, res, next){
+    res.status(404);
+    console.log("HDGDHDHHDHDDHHDHDH")
+    // respond with html page
+    if (req.accepts('html')) {
+        res.render('error', { url: req.url });
+        return;
+    }
+});
+
 //Finally, start your server. Your app should listen on port 3000, and log a string to the console that says which port the app is listening to.
 
 app.listen(3000, () => {

@@ -3,28 +3,28 @@
     {
       "id" : 1,
       "project_name": "Random Quote Generator",
-      "description" : "",
+      "description" : "An application that generates a random quote when clicking a button. Colors also randomly change.",
       "technologies" : ["HTML", "CSS", "JavaScript"],
-      "live_link" : "",
+      "live_link" : "https://lionessm.github.io/Random-Quote-Generator/",
       "github_link" : "https://github.com/Lionessm/Random-Quote-Generator.git",
       "image_urls": ["randomQuote1.png", "randomQuote2.png", "randomQuote3.png"]
     },
     {
       "id" : 2,
       "project_name": "Data Pagination",
-      "description" : "",
+      "description" : "The application renders the profiles of only 9 students per page and implements the technique known as “pagination” to enhance the usability of the web page.",
       "technologies" : ["HTML", "CSS", "JavaScript"],
-      "live_link" : "",
-      "github_link" : "",
+      "live_link" : "https://lionessm.github.io/Data-Pagination-and-Filtering/",
+      "github_link" : "https://github.com/Lionessm/Data-Pagination-and-Filtering",
       "image_urls": ["dataPagination1.png", "dataPagination2.png", "dataPagination3.png"]
     },
     {
       "id" : 3,
       "project_name": "Interactive form",
-      "description" : "fwfwefwefwefw",
+      "description" : "The project uses JavaScript to enhance an interactive registration form by adding customized and conditional behavior and interactivity and validating user input and providing helpful error messages when the user enters invalid information into the form fields.",
       "technologies" : ["HTML", "CSS", "JavaScript", "Regex"],
-      "live_link" : "",
-      "github_link" : "",
+      "live_link" : "https://lionessm.github.io/Interactive-form/",
+      "github_link" : "https://github.com/Lionessm/Interactive-form/",
       "image_urls": ["interactiveForm1.png", "interactiveForm2.png", "interactiveForm3.png", "interactiveForm4.png",
         "interactiveForm5.png"
       ]
@@ -32,19 +32,19 @@
     {
       "id" : 4,
       "project_name": "OOP Phrase Hunter Game",
-      "description" : "",
+      "description" : "This project is a browser-based, word guessing game called Phrase Hunter. JavaScript and OOP (Object-Oriented Programming) are used to select a random, hidden phrase, which a player tries to guess, by clicking the letters on the onscreen keyboard.",
       "technologies" : ["HTML", "CSS", "JavaScript", "Object Oriented Javascript"],
-      "live_link" : "",
-      "github_link" : "",
+      "live_link" : "https://lionessm.github.io/OOP-Game/",
+      "github_link" : "https://github.com/Lionessm/OOP-Game",
       "image_urls": ["phraseHunter1.png", "phraseHunter2.png", "phraseHunter3.png", "phraseHunter4.png", "phraseHunter5.png", "phraseHunter6.png"]
     },
     {
       "id" :5,
       "project_name": "API Request Project",
-      "description" : "",
+      "description" : "This application uses a Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees” and uses that data to build a prototype for a Startup employee directory. It requests a JSON object from the API and parses the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee’s image or name will open a modal window with more detailed information, such as the employee’s birthday and address. The birthday is formatted as well as the phone number.",
       "technologies" : ["HTML", "CSS", "JavaScript", "AJAX", "HTTP"],
-      "live_link" : "",
-      "github_link" : "",
+      "live_link" : "https://lionessm.github.io/public-api-request/",
+      "github_link" : "https://github.com/Lionessm/public-api-request",
       "image_urls": ["api1.png", "api2.png"]
     }
   ]

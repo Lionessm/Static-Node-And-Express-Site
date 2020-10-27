@@ -1,9 +1,9 @@
 extends layout.pug
 
 block content
-    h1.error_message= 'Error'
+    h1.error_message= 'Page not found'
     p.error_details= reason
     p.error_details= error.message
     p.error_details= error.status
     div
-        img.errorCat(src=`https://http.cat/${error.status}`)
+        img.errorCat(src='http://localhost:3000/static/images/404errorCat.jpg')

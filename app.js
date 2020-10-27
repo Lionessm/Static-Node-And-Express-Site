@@ -53,7 +53,7 @@ app.use(function(req,res){
     let error = new Error();
     error.status = 404;
     error.message = "Sorry cant find that!";
-    res.render('error', { reason: 'Status Code: 404', error: error });
+    res.render('page-not-found', { reason: 'Status Code: 404', error: error });
 });
 
 

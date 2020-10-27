@@ -39,21 +39,19 @@ app.get('/project/:id', (req, res) => {
 
 // This middleware is called when an error is thrown.
 app.use(function(err, req, res, next){
-    console.log("err", err);
-
     let error = new Error();
     error.status = 500;
     error.message = "Something went bad man, watchout!";
 
-    res.render( 'error', { reason: `Status Code: 500`, error: error });
+    res.render( 'error', { error: error });
 });
 
 // This middleware is called when a user tries to load a unknown route.
 app.use(function(req,res){
     let error = new Error();
     error.status = 404;
-    error.message = "Sorry cant find that!";
-    res.render('page-not-found', { reason: 'Status Code: 404', error: error });
+    error.message = "Sorry can't find that!";
+    res.render('page-not-found', { error: error });
 });
 
 

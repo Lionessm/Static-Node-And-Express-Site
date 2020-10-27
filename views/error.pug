@@ -2,8 +2,9 @@ extends layout.pug
 
 block content
     h1.error_message= 'Error'
-    p.error_details= reason
+    if reason
+        p.error_details= reason
     p.error_details= error.message
-    p.error_details= error.status
+    p.error_details= `Status code: ${error.status}`
     div
         img.errorCat(src=`https://http.cat/${error.status}`)

@@ -8,11 +8,11 @@ block content
       .cell.small-6.medium-9.large-9
 
         //- Use interpolation to dynamically add the project title.
-        h1= project_name
+        h1= `${project_name}`
 
         //- Use interpolation to dynamically add the project description.
         p.lead.text-light
-          = description
+          = `${description}`
 
 
       .cell.portfolio-meta.small-6.medium-2.large-3
@@ -28,6 +28,8 @@ block content
         a.button.expanded(href=`${live_link}`) Live Demo
         a.button.expanded(href=`${github_link}`) GitHub Repo
     
-        //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see.
-        each val in image_urls
-          img.image(src=`http://localhost:3000/static/images/${val}`)
+
+    //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see.
+
+    each val in image_urls
+       img.image(src=`http://localhost:3000/static/images/${val}`)

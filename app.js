@@ -10,8 +10,7 @@ app.use('/static', express.static('public'));
 
 //An "index" route (/) to render the "Home" page with the locals set to data.projects
 app.get('/', ( req, res ) =>{
-    console.log("data :" , data);
-    res.render('index');
+    res.render('index', data);
 })
 //An "about" route (/about) to render the "About" page
 app.get('/about', (req, res) => {
@@ -38,12 +37,17 @@ app.get('/project/:id', (req, res) => {
 
 app.use(function(req, res, next){
     res.status(404);
-    console.log("HDGDHDHHDHDDHHDHDH")
-    // respond with html page
+
     if (req.accepts('html')) {
         res.render('error', { url: req.url });
         return;
     }
+});
+
+app.use( (err, req, res, next) => {
+    res.locals.error = err;
+    res.status(500);
+    res.render('error');
 });
 
 //Finally, start your server. Your app should listen on port 3000, and log a string to the console that says which port the app is listening to.

@@ -11,7 +11,7 @@
     },
     {
       "id" : 2,
-      "project_name": "Data Pagination and Filtering",
+      "project_name": "Data Pagination",
       "description" : "",
       "technologies" : ["HTML", "CSS", "JavaScript"],
       "live_link" : "",

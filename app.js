@@ -30,28 +30,23 @@ app.get('/project/:id', (req, res) => {
         }
     }
 
-    res.sendStatus(500);
+    res.render('error', {reason: 'Project ID invalid'});
 })
 
-//Error
+// This middleware is called when an error is thrown.
+app.use(function(err, req, res, next){
+    console.log('err.statusCode', err.statusCode);
+    console.log('err.stack', err.stack);
 
-app.use(function(req, res, next){
-    res.status(404);
-
-    if (req.accepts('html')) {
-        res.render('error', { url: req.url });
-        return;
-    }
+    res.render('error', {reason: 'Status Code: 500'});
 });
 
-app.use( (err, req, res, next) => {
-    res.locals.error = err;
-    res.status(500);
-    res.render('error');
+// This middleware is called when a user tries to load a unknown route.
+app.use(function(req,res){
+    res.render('error', {reason: 'Status Code: 404'});
 });
 
 //Finally, start your server. Your app should listen on port 3000, and log a string to the console that says which port the app is listening to.
-
 app.listen(3000, () => {
     console.log('The application is running on localhost:3000!')
 });

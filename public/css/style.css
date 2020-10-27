@@ -150,6 +150,10 @@ a:hover{
 }
 
 .error_message{
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+.errorCat{
   padding-left: 40px;
-  padding-top: 100px;
 }

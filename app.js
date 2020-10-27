@@ -30,20 +30,30 @@ app.get('/project/:id', (req, res) => {
         }
     }
 
-    res.render('error', {reason: 'Project ID invalid'});
+    let error = new Error();
+    error.status = 404;
+    error.message = "Project not found based on the provided ID!";
+
+    res.render('error', {reason: 'Project ID invalid', error: error});
 })
 
 // This middleware is called when an error is thrown.
 app.use(function(err, req, res, next){
-    console.log('err.statusCode', err.statusCode);
-    console.log('err.stack', err.stack);
+    console.log("err", err);
 
-    res.render('error', {reason: 'Status Code: 500'});
+    let error = new Error();
+    error.status = 500;
+    error.message = "Something went bad man, watchout!";
+
+    res.render( 'error', { reason: `Status Code: 500`, error: error });
 });
 
 // This middleware is called when a user tries to load a unknown route.
 app.use(function(req,res){
-    res.render('error', {reason: 'Status Code: 404'});
+    let error = new Error();
+    error.status = 404;
+    error.message = "Sorry cant find that!";
+    res.render('error', { reason: 'Status Code: 404', error: error });
 });
 
 //Finally, start your server. Your app should listen on port 3000, and log a string to the console that says which port the app is listening to.

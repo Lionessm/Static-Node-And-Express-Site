@@ -1,7 +1,14 @@
 extends layout.pug
 
 block content
-    h1.error_message= 'Ooops, this page does not exist!'
+    h1.error_message= 'Error'
     p.error_details= reason
-    div
-        img.errorCat(src='http://localhost:3000/static/images/errorCat.jpg')
+    p.error_details= error.message
+    p.error_details= error.status
+    if error.status === 404
+        div
+        img.errorCat(src='http://localhost:3000/static/images/404errorCat.jpg')
+    else
+        div
+        img.errorCat(src=`https://http.cat/${error.status}`)
+

@@ -1,10 +1,10 @@
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: Courier, serif;
 }
 
   h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Courier, sans-serif;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5,p{
   p{
     font-size: 15px;
     color: #666;
+    font-family: Courier, sans-serif;
   }
 
 .round{
@@ -58,28 +59,30 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: #4397E6;
   color: #fff;
   box-shadow: none !important;
 }
 
   .portfolio-me p{
     font-size: 14px;
-    color: #999;
+    color: #fff;
+    font-family: Courier, sans-serif;
   }
 
   .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Courier, sans-serif;
     font-weight: 600;
-    color: #555;
+    color: #43E691;
     font-size: 13px;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
   }
 
+
   .portfolio-me a:hover{
-    color: #999;
+    color: #E64397;
   }
 
 .portfolio-breadcrumb{
@@ -89,27 +92,36 @@ a:hover{
 }
 
  .portfolio-breadcrumb a{
-   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-family: Courier, sans-serif;
    font-weight: 600;
    font-size: 13px;
    letter-spacing: 2.5px;
    -webkit-text-transform: uppercase;
    text-transform: uppercase;
+   color: #43E691;
  }
 
 .portfolio-intro{
   margin: 0;
   padding: 40px 50px 30px;
+
+}
+.portfolio-intro h1{
+  color: #E64397;
+  font-family: Courier, sans-serif;
+
 }
 
 .portfolio-intro p{
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 40px;
+  font-family: Courier, sans-serif;
 }
 
 .portfolio-index{
   margin: 0;
   padding: 10px 50px;
+  background-color:#fff;
 }
 
   .portfolio-index .thumbnail{
@@ -126,12 +138,25 @@ a:hover{
 
     .portfolio-index .cell h5{
       letter-spacing: 1px;
+      color: #E64397;
+      font-family: Courier, sans-serif;
     }
 
 .portfolio-meta{
   padding-left: 20px;
 }
 
+.portfolio-meta a{
+  background-color: #E64397 ;
+}
+
+.portfolio-meta a:hover{
+  background-color: #43e691;
+}
+
+.portfolio-meta h6{
+  color:#E64397;
+}
   .portfolio-meta .button{
     margin-bottom: 5px;
   }
@@ -143,6 +168,7 @@ a:hover{
 .portfolio-project li{
   font-size: 13px;
   color: #444;
+  font-family: Courier, sans-serif;
 }
 
 .portfolio-bio{
@@ -160,4 +186,22 @@ a:hover{
 
 .error_details{
   padding-left: 60px;
+}
+
+#logo_homepage {
+  width: 230px;
+  height: auto;
+  float: right;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#logo {
+  width: 70px;
+  height: auto;
+  float: right;
+  margin-top: 7px;
+  display: block;
+  text-align: right;
+  margin-right: 40px;
 }

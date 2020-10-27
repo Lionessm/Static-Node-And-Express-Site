@@ -1,6 +1,9 @@
 extends layout.pug
 
 block content
+    #logo
+        img(src='http://localhost:3000/static/images/logo.png')
+
     h1.error_message= 'Error'
     if reason
         p.error_details= reason

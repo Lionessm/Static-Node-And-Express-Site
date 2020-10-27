@@ -1,6 +1,9 @@
 extends layout.pug
 
-block content 
+block content
+  #logo
+    img(src='http://localhost:3000/static/images/logo.png')
+
   nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back
   article.grid-container.portfolio-intro.portfolio-project
@@ -9,7 +12,6 @@ block content
 
         h1 Maria Mihaila
 
-        //- Feel free personalize the title below
         p.lead.text-light
           | Full Stack JavaScript Developer
 

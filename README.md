@@ -2,4 +2,4 @@
 
 // Changed font style to Courier, sans-serif;
 // Changed color scheme of site with the following colors: #4397E6, #43E691, #E64397
-// Created logo and put diplayed it on all pages.
+// Created logo and diplayed it on all pages.
